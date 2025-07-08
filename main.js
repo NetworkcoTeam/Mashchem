@@ -12,7 +12,7 @@ function renderContent(tab) {
 
     switch (tab) {
         case "home":
-            // renderHomeTab(contentArea);
+             renderHomeTab(contentArea);
             break;
         case "products":
             // renderProductsTab(contentArea);
