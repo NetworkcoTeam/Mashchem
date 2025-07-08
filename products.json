@@ -5,5 +5,29 @@
         "description": "A concentrated dish washing liquid for commercial and household use.",
         "packaging": "5L",
         "category": "Cleaning Chemicals"
+    },
+
+    {
+        "name": "Dish delux",
+        "image":"Images/Maschem-dish-deluxe.png",
+        "description": "A concentrated dish washing liquid for commercial and household use. A concentrated dish washing liquid for commercial and household use. A concentrated dish washing liquid for commercial and household use.",
+        "packaging": "5L",
+        "category": "Cleaning Chemicals"
+    },
+
+    {
+        "name": "Dish delux",
+        "image":"Images/Maschem-dish-deluxe.png",
+        "description": "A concentrated dish washing liquid for commercial and household use.",
+        "packaging": "5L",
+        "category": "Cleaning Chemicals"
+    },
+
+    {
+        "name": "Dish delux",
+        "image":"Images/Maschem-dish-deluxe.png",
+        "description": "A concentrated dish washing liquid for commercial and household use.",
+        "packaging": "5L",
+        "category": "Dyes and Frafrances"
     }
 ]
