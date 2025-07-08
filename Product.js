@@ -20,7 +20,7 @@ export function renderProductsTab(container) {
       for (const category in categories) {
         output += `
           <h2 class="category-title">${category}</h2>
-          <div class="row">
+          <div class="row product-row">
             ${categories[category].map(product => `
               <div class="col-md-4 mb-4 d-flex">
                 <div class="product-card">
