@@ -1,31 +1,37 @@
 import { renderNavbar } from "./Navbar.js";
-// Import your tab components here
- import { renderHomeTab } from "./Home.js";
+import { renderHomeTab } from "./Home.js";
 import { renderProductsTab } from "./Product.js";
- import { renderAboutTab } from "./About.js";
+import { renderAboutTab } from "./About.js";
 import { renderContactTab } from "./Contact.js";
+import { renderFooter } from "./Footer.js";
 
 // Render content based on tab
 function renderContent(tab) {
     const contentArea = document.getElementById("contentArea");
     if (!contentArea) return;
 
+    // Clear previous content
+    contentArea.innerHTML = '';
+
     switch (tab) {
         case "home":
-             renderHomeTab(contentArea);
+            renderHomeTab(contentArea);
             break;
         case "products":
-             renderProductsTab(contentArea);
+            renderProductsTab(contentArea);
             break;
         case "about":
-             renderAboutTab(contentArea);
+            renderAboutTab(contentArea);
             break;
         case "contact":
-             renderContactTab(contentArea);
+            renderContactTab(contentArea);
             break;
         default:
-            contentArea.innerHTML = `<p>Unknown tab: ${tab}</p>`;
+            contentArea.innerHTML = `<p class="alert alert-warning">Unknown tab: ${tab}</p>`;
     }
+
+    // Ensure footer stays at bottom
+    renderFooter();
 }
 
 // Setup navbar navigation
@@ -42,12 +48,10 @@ function setupNavbarNavigation() {
         if (link) {
             link.addEventListener("click", (e) => {
                 e.preventDefault();
-                // Remove "active" from all nav links
+                // Update active state
                 navLinks.forEach(({ id }) => {
-                    const l = document.getElementById(id);
-                    if (l) l.classList.remove("active");
+                    document.getElementById(id)?.classList.remove("active");
                 });
-                // Add "active" to clicked link
                 link.classList.add("active");
                 renderContent(tab);
             });
@@ -55,23 +59,27 @@ function setupNavbarNavigation() {
     });
 }
 
-// Wait for the DOM to be fully loaded before rendering the navbar and setting up navigation
-document.addEventListener("DOMContentLoaded", () => {
+// Initialize the application
+function initApp() {
+    const app = document.getElementById("app");
+    if (!app) return;
+
+    // Clear existing content
+    app.innerHTML = '';
+
+    // Render navbar
     renderNavbar("app");
 
-    // Add a content area if not present
-    let contentArea = document.getElementById("contentArea");
-    if (!contentArea) {
-        contentArea = document.createElement("div");
-        contentArea.id = "contentArea";
-        contentArea.className = "mt-4";
-        const app = document.getElementById("app");
-        if (app) app.appendChild(contentArea);
-    }
+    // Create content area
+    const contentArea = document.createElement("div");
+    contentArea.id = "contentArea";
+    contentArea.className = "container-fluid py-3";
+    app.appendChild(contentArea);
 
+    // Set up navigation and render default tab
     setupNavbarNavigation();
-    renderContent("home"); // Default tab
-});
+    renderContent("home");
+}
 
-
-
+// Start the application when DOM is ready
+document.addEventListener("DOMContentLoaded", initApp);
