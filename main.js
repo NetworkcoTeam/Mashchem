@@ -2,8 +2,8 @@ import { renderNavbar } from "./Navbar.js";
 // Import your tab components here
  import { renderHomeTab } from "./Home.js";
 import { renderProductsTab } from "./Product.js";
-// import { renderAboutTab } from "./About.js";
-// import { renderContactTab } from "./Contact.js";
+ //import { renderAboutTab } from "./About.js";
+import { renderContactTab } from "./Contact.js";
 
 // Render content based on tab
 function renderContent(tab) {
@@ -17,11 +17,11 @@ function renderContent(tab) {
         case "products":
              renderProductsTab(contentArea);
             break;
-        case "about":
-            // renderAboutTab(contentArea);
+       // case "about":
+             //renderAboutTab(contentArea);
             break;
         case "contact":
-            // renderContactTab(contentArea);
+             renderContactTab(contentArea);
             break;
         default:
             contentArea.innerHTML = `<p>Unknown tab: ${tab}</p>`;
