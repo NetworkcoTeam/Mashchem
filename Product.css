@@ -1,0 +1,102 @@
+.products-heading {
+  width: 100%;
+  /* Changed background color */
+  background-color:#28a745  ;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.category-title {
+  /* color: #000000; 
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 3rem; */
+
+    font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 430px;
+  
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 360px; 
+  width: 300px;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.075);
+  /* added border-radius */
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.product-name {
+  background-color: #28a745 ;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-image {
+  height: 200px; 
+  width: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.packaging-container {
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.packaging-badge {
+  display: inline-block;
+  /* Adjusted background-color */
+  background-color: #28a745 ;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 0;
+}
+
+.description-container {
+  /* Adjusted background-color */
+  background-color: #28a745 ;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0;
+  height: 120px;
+  overflow-y: auto;
+}
+
+.description-container p {
+  margin: 0;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.product-row {
+  padding: 0 6rem; 
+}
+
+
+/* Added style to the heading */
+h1  {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}

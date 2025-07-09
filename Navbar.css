@@ -1,0 +1,122 @@
+/* Navigation Styles */
+
+.navbar {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e9ecef;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white !important;
+}
+
+.maschem-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  
+}
+
+.maschem-logo:hover {
+  color: #20c997;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: #0d8729cc;
+  font-weight: bolder;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #28a745;
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link.active {
+  color: #28a745;
+  background-color: #e8f5e8;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background-color: #28a745;
+  border-radius: 1px;
+}
+
+/* Mobile Navigation */
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+    margin: 0.25rem 0;
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-nav .nav-link.active::after {
+    display: none;
+  }
+  
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+  }
+}
+
+@media (max-width: 576px) {
+  .maschem-logo {
+    font-size: 1.3rem;
+  }
+  
+  .navbar {
+    padding: 0.75rem 0;
+  }
+}
+
+/* Animation for mobile menu */
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+
+.navbar-collapse.collapsing {
+  transition: height 0.3s ease;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
