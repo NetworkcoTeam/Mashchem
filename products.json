@@ -1,33 +1,81 @@
 [
     {
         "name": "Dish delux",
-        "image":"Images/Maschem-dish-deluxe.png",
+        "image":"Images/Maschem-dish-delux-transparent.png",
         "description": "A concentrated dish washing liquid for commercial and household use.",
         "packaging": "5L",
         "category": "Cleaning Chemicals"
     },
 
     {
-        "name": "Dish delux",
-        "image":"Images/Maschem-dish-deluxe.png",
-        "description": "A concentrated dish washing liquid for commercial and household use. A concentrated dish washing liquid for commercial and household use. A concentrated dish washing liquid for commercial and household use.",
+        "name": "Descaler",
+        "image":"Images/Maschem-descaler-transparent.png",
+        "description": "A fast-acting acidic cleaner designed to remove limescale, calcium deposits, rust stains, and other mineral buil-up.",
         "packaging": "5L",
         "category": "Cleaning Chemicals"
     },
 
     {
-        "name": "Dish delux",
-        "image":"Images/Maschem-dish-deluxe.png",
-        "description": "A concentrated dish washing liquid for commercial and household use.",
+        "name": "General Purpose Cleaner",
+        "image":"Images/Maschem-general-purpose-cleaner-transparent.png",
+        "description": "A versatile, high performance cleaning solution formulated to remove dirt, grease, and grime on a wide range of surfaces.",
         "packaging": "5L",
         "category": "Cleaning Chemicals"
     },
 
     {
-        "name": "Dish delux",
-        "image":"Images/Maschem-dish-deluxe.png",
-        "description": "A concentrated dish washing liquid for commercial and household use.",
+        "name": "Car Shampoo",
+        "image":"Images/Maschem-car-shampoo-transparent.png",
+        "description": "A rich-foaming, pH-balanced car shampoo formulated to gently lift dirt, road grime, and residues from vehicle surfaces without stripping wax or damaging paintwork. Safe for frequent use on all exterior vehicle finishes.",
         "packaging": "5L",
-        "category": "Dyes and Fragrances"
+        "category": "Cars"
+    },
+
+    {
+        "name": "Car Wash and Wax",
+        "image":"Images/Maschem-car-wash-&-wax-transparent.png",
+        "description": "A dual-action formula that cleans and protects in one step. Car Wash & Wax effectively removes dirt and grime while leaving behind a glossy, protective wax layer that enhances shine and shields against UV rays and pollutants.",
+        "packaging": "5L",
+        "category": "Cars"
+    },
+
+    {
+        "name": "Fabric Softener",
+        "image":"Images/Maschem-fabric-softener-transparent.png",
+        "description": "A concentrated fabric softener that leaves clothes soft, fresh, and static-free. Reduces wrinkles and enhances the lifespan of fabrics with every wash, while leaving a long-lasting fragrance.",
+        "packaging": "5L",
+        "category": "Laundry"
+    },
+
+    {
+        "name": "Hand Sanitizer",
+        "image":"Images/Maschem-car-shampoo-transparent.png",
+        "description": "A fast-drying, alcohol-based hand sanitizer that kills 99.9% of germs and bacteria without the need for water. Enriched with moisturizers to prevent dryness, making it suitable for frequent use in homes, workplaces, and public areas.",
+        "packaging": "5L",
+        "category": "Hand hygene"
+    },
+
+    {
+        "name": "i-Wash Handsoap",
+        "image":"Images/Maschem-i-wash-handsoap-transparent.png",
+        "description": "A gentle yet effective liquid hand soap designed to remove dirt, grease, and bacteria while being kind to the skin. I-Wash is ideal for both commercial and domestic use, providing a clean, fresh feel after every wash.",
+        "packaging": "5L",
+        "category": "Hand hygene"
+    },
+
+    {
+        "name": "Laundry Liquid",
+        "image":"Images/Maschem-laundry-liquid-transparent .png",
+        "description": "A powerful liquid laundry detergent that penetrates deep into fabrics to remove stains and odors while protecting colors and softness. Suitable for both top- and front-loading washing machines.",
+        "packaging": "5L",
+        "category": "Laundry"
+    },
+
+    {
+        "name": "Oven Cleaner",
+        "image":"Images/Maschem-oven-cleaner-transparent.png",
+        "description": "A heavy-duty oven and grill cleaner that rapidly dissolves baked-on grease, carbon deposits, and burnt food residue. Ideal for commercial kitchens, food equipment, and industrial ovens.",
+        "packaging": "5L",
+        "category": "Cleaning Chemicals"
     }
 ]
