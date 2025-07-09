@@ -1,0 +1,116 @@
+/* contact.css - Styles for Contact Component */
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.section-title {
+    color: #2c3e50;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-control {
+    border: 1px solid #e1e5eb;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+}
+
+.contact-form .form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+}
+
+.contact-form .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Contact Info */
+.contact-info {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.contact-info h4 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.contact-info ul li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i {
+    color: #3498db;
+    font-size: 1.2rem;
+    width: 24px;
+}
+
+/* Social Links */
+.social-links a i {
+    color: #7f8c8d;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover i {
+    color: #3498db;
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .contact-section {
+        padding: 3rem 0;
+    }
+    
+    .contact-info {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form,
+    .contact-info {
+        padding: 1.5rem;
+    }
+}

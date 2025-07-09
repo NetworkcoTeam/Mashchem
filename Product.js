@@ -1,4 +1,5 @@
 export function renderProductsTab(container) {
+  container.className = "products-page";
   fetch("products.json")
     .then(response => response.json())
     .then(products => {
