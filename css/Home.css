@@ -5,7 +5,7 @@
   /* background-image: 
     linear-gradient(135deg, rgba(40, 167, 69, 0.6) 0%, rgba(0, 123, 255, 0.4) 100%),
     url('./src/your-background-image.jpg'); */
-  background-image: url(/Images/Background1.jpg);
+  background-image: url(./Images/Background1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
