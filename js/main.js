@@ -1,9 +1,9 @@
-import { renderNavbar } from "./Navbar.js";
-import { renderHomeTab } from "./Home.js";
-import { renderProductsTab } from "./Product.js";
-import { renderAboutTab } from "./About.js";
-import { renderContactTab } from "./Contact.js";
-import { renderFooter } from "./Footer.js";
+import { renderNavbar } from "./Components/Navbar.js";
+import { renderHomeTab } from "./Components/Home.js";
+import { renderProductsTab } from "./Components/Product.js";
+import { renderAboutTab } from "./Components/About.js";
+import { renderContactTab } from "./Components/Contact.js";
+import { renderFooter } from "./Components/Footer.js";
 
 // Render content based on tab
 function renderContent(tab) {
