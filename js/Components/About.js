@@ -61,7 +61,7 @@ export function renderAboutTab(container) {
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="./images/cleaning.jpg" alt="Strategy Image" class="img-fluid rounded-4 about-image shadow-sm" loading="lazy">
+            <img src="./Images/cleaning.jpg" alt="Strategy Image" class="img-fluid rounded-4 about-image shadow-sm" loading="lazy">
           </div>
         </div>
       </div>
