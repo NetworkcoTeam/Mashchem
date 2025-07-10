@@ -120,3 +120,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Custom toggler animation */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33, 37, 41, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 4L26 26M26 4L4 26'/%3e%3c/svg%3e");
+  transition: all 0.3s ease;
+}
+
+/* Optional: Add animation to the toggler */
+.navbar-toggler {
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:not(.collapsed) {
+  transform: rotate(180deg);
+}

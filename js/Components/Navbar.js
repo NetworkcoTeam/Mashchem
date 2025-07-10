@@ -50,3 +50,16 @@ export function renderNavbar(containerId = "app") {
         container.insertAdjacentHTML('afterbegin', navbarHTML);
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  
+  if (navbarToggler) {
+    navbarToggler.addEventListener('click', function() {
+      this.classList.toggle('collapsed');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+    });
+  }
+});
