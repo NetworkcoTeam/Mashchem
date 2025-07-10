@@ -4,7 +4,7 @@ export function renderNavbar(containerId = "app") {
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#" id="logo">
-          <img src="images/Maschem-logo.png" alt="Maschem Logo" class="maschem-logo me-2"/>
+          <img src="./Images/Maschem-logo.png" alt="Maschem Logo" class="maschem-logo me-2"/>
           <span class="fw-bold">Maschem</span>
         </a>
         
