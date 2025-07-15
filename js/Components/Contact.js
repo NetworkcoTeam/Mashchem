@@ -21,7 +21,7 @@ export function renderContactTab(container) {
               <div class="mb-4">
                 <div class="map-container rounded-3 overflow-hidden mb-3" style="height: 200px;">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.123456789012!2d30.4846413150288!3d-22.9512345847349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d9d9d9d9d9d9%3A0x1ec6d9d9d9d9d9d9!2s123+Main+Rd,+Thohoyandou!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.123456789012!2d30.4846413150288!3d-22.9512345847349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d9d9d9d9d9d9%3A0x1ec6d9d9d9d9d9d9!2s1+Mphephu+drive,+Thohoyandou!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
                     width="100%" 
                     height="100%" 
                     style="border:0;" 
@@ -36,12 +36,12 @@ export function renderContactTab(container) {
                   </div>
                   <div>
                     <p class="mb-1 fw-medium">Address:</p>
-                    <p class="text-muted mb-0">123 Main Road, Thohoyandou</p>
+                    <p class="text-muted mb-0">Mphephu Drive, Thohoyandou</p>
                   </div>
                 </div>
               </div>
               <div class="d-grid">
-                <a href="https://www.google.com/maps/dir//123+Main+Rd,+Thohoyandou" 
+                <a href="https://www.google.com/maps/dir//Mphephu+drive,+Thohoyandou" 
                    class="btn btn-outline-primary btn-sm" 
                    target="_blank">
                   <i class="bi bi-arrow-up-right-circle me-2"></i>Directions
