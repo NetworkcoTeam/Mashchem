@@ -4,6 +4,7 @@ import { renderProductsTab } from "./Components/Product.js";
 import { renderAboutTab } from "./Components/About.js";
 import { renderContactTab } from "./Components/Contact.js";
 import { renderFooter } from "./Components/Footer.js";
+import { renderWhatsAppButton } from "./Components/WhatsAppButton.js";
 
 // Render content based on tab
 function renderContent(tab) {
@@ -79,6 +80,9 @@ function initApp() {
     // Set up navigation and render default tab
     setupNavbarNavigation();
     renderContent("home");
+    
+    // Render WhatsApp button (added this line)
+    renderWhatsAppButton();
 }
 
 // Start the application when DOM is ready

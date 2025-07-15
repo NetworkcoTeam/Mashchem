@@ -1,4 +1,3 @@
-// Contact.js - Contact Page Component with Working Google Maps
 export function renderContactTab(container) {
     const contactHTML = `
     <section class="contact-section py-5 bg-light">
@@ -11,16 +10,55 @@ export function renderContactTab(container) {
           </div>
         </div>
         
-        <div class="row g-5">
+        <div class="row g-4">
+          <!-- Thohoyandou Store -->
+          <div class="col-lg-4 col-md-6">
+            <div class="store-card p-4 p-lg-5 rounded-4 shadow-sm bg-white h-100">
+              <h3 class="h4 mb-4 d-flex align-items-center">
+                <i class="bi bi-shop fs-3 text-primary me-3"></i>
+                Thohoyandou Store
+              </h3>
+              <div class="mb-4">
+                <div class="map-container rounded-3 overflow-hidden mb-3" style="height: 200px;">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.123456789012!2d30.4846413150288!3d-22.9512345847349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d9d9d9d9d9d9%3A0x1ec6d9d9d9d9d9d9!2s123+Main+Rd,+Thohoyandou!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+                <div class="d-flex align-items-start">
+                  <div class="icon-box bg-primary-light text-primary rounded-circle p-2 me-3 flex-shrink-0">
+                    <i class="bi bi-geo-alt-fill fs-5"></i>
+                  </div>
+                  <div>
+                    <p class="mb-1 fw-medium">Address:</p>
+                    <p class="text-muted mb-0">123 Main Road, Thohoyandou</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-grid">
+                <a href="https://www.google.com/maps/dir//123+Main+Rd,+Thohoyandou" 
+                   class="btn btn-outline-primary btn-sm" 
+                   target="_blank">
+                  <i class="bi bi-arrow-up-right-circle me-2"></i>Directions
+                </a>
+              </div>
+            </div>
+          </div>
+          
           <!-- Polokwane Store -->
-          <div class="col-lg-6">
+          <div class="col-lg-4 col-md-6">
             <div class="store-card p-4 p-lg-5 rounded-4 shadow-sm bg-white h-100">
               <h3 class="h4 mb-4 d-flex align-items-center">
                 <i class="bi bi-shop fs-3 text-primary me-3"></i>
                 Polokwane Store
               </h3>
               <div class="mb-4">
-                <div class="map-container rounded-3 overflow-hidden mb-3" style="height: 250px;">
+                <div class="map-container rounded-3 overflow-hidden mb-3" style="height: 200px;">
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.692331693012!2d29.4486233150288!3d-23.8964978847349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d9d9d9d9d9d9%3A0x1ec6d9d9d9d9d9d9!2s56%20Schoeman%20St%2C%20Polokwane%2C%200699!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
                     width="100%" 
@@ -43,23 +81,23 @@ export function renderContactTab(container) {
               </div>
               <div class="d-grid">
                 <a href="https://www.google.com/maps/dir//56+Schoeman+St,+Polokwane,+0699" 
-                   class="btn btn-outline-primary" 
+                   class="btn btn-outline-primary btn-sm" 
                    target="_blank">
-                  <i class="bi bi-arrow-up-right-circle me-2"></i>Get Directions
+                  <i class="bi bi-arrow-up-right-circle me-2"></i>Directions
                 </a>
               </div>
             </div>
           </div>
           
           <!-- Louis Trichardt Store -->
-          <div class="col-lg-6">
+          <div class="col-lg-4 col-md-6">
             <div class="store-card p-4 p-lg-5 rounded-4 shadow-sm bg-white h-100">
               <h3 class="h4 mb-4 d-flex align-items-center">
                 <i class="bi bi-shop fs-3 text-primary me-3"></i>
                 Louis Trichardt Store
               </h3>
               <div class="mb-4">
-                <div class="map-container rounded-3 overflow-hidden mb-3" style="height: 250px;">
+                <div class="map-container rounded-3 overflow-hidden mb-3" style="height: 200px;">
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.692331693012!2d29.4486233150288!3d-23.8964978847349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d9d9d9d9d9d9%3A0x1ec6d9d9d9d9d9d9!2sPlot+30+Rondebosch,+Louis+Trichardt,+0920!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
                     width="100%" 
@@ -82,9 +120,9 @@ export function renderContactTab(container) {
               </div>
               <div class="d-grid">
                 <a href="https://www.google.com/maps/dir//Plot+30+Rondebosch,+Louis+Trichardt,+0920" 
-                   class="btn btn-outline-primary" 
+                   class="btn btn-outline-primary btn-sm" 
                    target="_blank">
-                  <i class="bi bi-arrow-up-right-circle me-2"></i>Get Directions
+                  <i class="bi bi-arrow-up-right-circle me-2"></i>Directions
                 </a>
               </div>
             </div>
@@ -103,8 +141,8 @@ export function renderContactTab(container) {
                   </div>
                   <h5 class="h6 mb-1">Call Us</h5>
                   <p class="text-muted mb-0">+27 (0)64 948 6557</p>
-                   <p class="text-muted mb-0">+27 (0)71 105 5378</p>
-                    <p class="text-muted mb-0">+27 (0)72 516 5827</p>
+                  <p class="text-muted mb-0">+27 (0)71 105 5378</p>
+                  <p class="text-muted mb-0">+27 (0)72 516 5827</p>
                 </div>
                 <div class="col-md-4">
                   <div class="icon-box bg-primary-light text-primary rounded-circle p-3 mx-auto mb-3">
